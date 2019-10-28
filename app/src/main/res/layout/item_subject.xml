@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:padding="8dp"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/subjectNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:text="Data Structures"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageView
+        android:id="@+id/editImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="339dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_mode_edit_black_24dp"
+        android:alpha="0.5"
+        android:contentDescription="@string/edit_button_description"/>
+
+    <ImageView
+        android:id="@+id/crossImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:alpha="0.5"
+        android:contentDescription="@string/cross_image_content_description" />
+
+    <TableLayout
+        android:layout_below="@+id/subjectNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/subjectCodeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subject_code"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/subjectCodeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="101"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/subjectCreditTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subject_credit"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/subjectCreditTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="3.00"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
